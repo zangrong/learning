@@ -1,0 +1,12 @@
+{
+  "hints": [],
+  "groups": [
+    {
+      "sourceType": "com.cetian.base.configuration.db.DbConfiguration1",
+      "name": "spring.datasource.db1",
+      "sourceMethod": "public javax.sql.DataSource dataSource1() ",
+      "type": "javax.sql.DataSource"
+    }
+  ],
+  "properties": []
+}

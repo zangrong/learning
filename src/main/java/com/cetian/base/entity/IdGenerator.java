@@ -20,7 +20,7 @@ import org.hibernate.type.Type;
 
 /**
  * @ClassName:  IdGenerator   
- * @Description:TODO
+ * @Description: id生成器，目前暂未用到
  * @date:  2018年3月21日 上午10:11:27
  * @author: zangrong
  * 

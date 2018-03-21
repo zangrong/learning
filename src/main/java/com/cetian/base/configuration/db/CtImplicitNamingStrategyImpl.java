@@ -22,7 +22,7 @@ import org.hibernate.boot.model.naming.ImplicitNamingStrategy;
 import org.hibernate.boot.model.naming.ImplicitNamingStrategyJpaCompliantImpl;
 
 /**
- * @ClassName: YunImplicitNamingStrategyImpl
+ * @ClassName: CtImplicitNamingStrategyImpl
  * @Description: 数据表默认命名方式，如果指定了就用指定名，如果没指定就用默认命名方式
  * @date: 2017年3月5日 下午8:31:51
  * @author: zangrong

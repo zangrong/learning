@@ -15,9 +15,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import com.cetian.base.entity.IdWorker;
 import com.cetian.base.entity.ResponseMessage;
 import com.cetian.base.util.DateUtil;
-import com.cetian.base.util.IdWorker;
 import com.cetian.module.learning.dao.CourseRecordDao;
 import com.cetian.module.learning.entity.CourseRecord;
 import com.cetian.module.learning.entity.FinishedEnum;

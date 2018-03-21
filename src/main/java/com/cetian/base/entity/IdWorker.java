@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package com.cetian.base.util;
+package com.cetian.base.entity;
 
 
 import java.util.Random;

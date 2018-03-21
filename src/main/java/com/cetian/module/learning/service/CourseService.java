@@ -12,6 +12,8 @@ import java.util.Optional;
 
 import org.apache.commons.collections.CollectionUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -62,13 +64,16 @@ public class CourseService {
 
 	/**
 	 * @Title: list   
-	 * @Description: 列表
+	 * @Description: 分页获取课程列表
+	 * @param pageNo 页码 从1开始 默认1
+	 * @param pageSize 每页记录数 默认10
 	 * @return: ResponseMessage      
-	 * @throws: 
+	 * @throws:
 	 */
-	public ResponseMessage list() {
+	public ResponseMessage list(int pageNo, int pageSize) {
 		ResponseMessage responseMessage = new ResponseMessage();
-		List<Course> list = (List<Course>) courseDao.findAll();
+		Page<Course> page = courseDao.findAll(PageRequest.of(pageNo - 1, pageSize));
+		List<Course> list = page.getContent();
 		// 如果集合为空
 		if (CollectionUtils.isEmpty(list)) {
 			responseMessage.setStateCode(ResponseMessage.STATE_CODE_NO_DATA);

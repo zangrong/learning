@@ -17,7 +17,7 @@
 	<appender name="baselog"
 		class="ch.qos.logback.core.rolling.RollingFileAppender">
 		<!-- 基础日志 -->
-		<File>@zeus.log.path@/base.log</File>
+		<File>logs/base.log</File>
 		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
 			<fileNamePattern>@zeus.log.path@/base.%d.%i.log</fileNamePattern>
 			<timeBasedFileNamingAndTriggeringPolicy

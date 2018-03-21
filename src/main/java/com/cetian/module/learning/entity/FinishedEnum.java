@@ -11,14 +11,14 @@ import com.fasterxml.jackson.annotation.JsonValue;
 
 /**
  * @ClassName:  FinishedEnum   
- * @Description:TODO
+ * @Description: 课程完成状态 0未完成 1已完成
  * @date:  2018年3月21日 上午11:47:39
  * @author: zangrong
  * 
  */
 public enum FinishedEnum {
-	no("0"), // 非精选
-	yes("1");// 精选
+	no("0"), // 未完成
+	yes("1");// 已完成
 
 	private String value;
 

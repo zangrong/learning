@@ -81,7 +81,7 @@ public class CourseRecordController {
 	}
 	
 	@GetMapping("/list/by/userid")
-	public ResponseMessage list(String userId){
+	public ResponseMessage listByUserId(String userId){
 		ResponseMessage responseMessage = courseRecordService.listByUserId(userId);
 		return responseMessage;
 	}
